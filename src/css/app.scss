@@ -1,0 +1,19 @@
+@charset "utf-8";
+$colorTotal : #000;
+$fontSize : 14px;
+#root{
+  color:$colorTotal;font-size:$fontSize;
+  #app{
+     padding-top: 30px;
+    h2{
+       text-align: center;
+       .title{
+         color: rgb(239, 243, 244);
+         display: inline-block;
+         background-color: rgb(80, 78,79);
+         padding: 10px;
+
+       }
+    }
+  }
+}
