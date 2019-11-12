@@ -1,0 +1,48 @@
+.cover{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(1, 3, 0, 0.3);
+  z-index: 100;
+  .confirm_box{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgb(240, 240, 254);
+    p{
+      font-weight: bold;
+      color: #413f3f;
+    }
+    input{
+      display: block;
+      width: 100%;
+      height: 25px;
+      line-height: 25px;
+      border: none;
+      text-align: center;
+    }
+    .confirm{
+      margin-top: 15px;
+      margin-bottom: 5px;
+      width: 40px;
+      border: 1px solid rgb(177, 181, 177);
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+      &:hover{
+        border: 1px solid rgb(52, 54, 52);
+      }
+    }
+    .not_properly{
+      color: red;
+      font-size: 13px;
+    }
+  }
+}
