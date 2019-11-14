@@ -26,7 +26,7 @@ class Cover extends Component {
     this.setState({
       value:e.target.value
     },()=>{
-      let numberReg=new RegExp("[^1-9]");
+      let numberReg=new RegExp("[^1-6]");
       let isProperly=numberReg.test(Number(this.state.value));
       let errorLength=this.state.value.length!==1;
       if(isProperly||errorLength){
@@ -41,13 +41,13 @@ class Cover extends Component {
     })
   }
   toFix(){
-    let numberReg=new RegExp("[^1-9]");
+    let numberReg=new RegExp("[^1-6]");
     let isProperly=numberReg.test(Number(this.state.value));
     let errorLength=this.state.value.length!==1;
     if(isProperly||errorLength){
       return
     }
-    this.props.coverShouldShow(false)
+    this.props.coverShouldShow({number:this.state.value,show:false})
   }
 }
 export default Cover

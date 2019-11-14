@@ -14,12 +14,45 @@
     justify-content: space-around;
     margin-top: 15px;
     li{
-      padding: 15px;
-      cursor: pointer;
-      background-color: rgb(85, 97, 130);
-      border-radius: 30%;
+      padding-top: 12px;
+      position: relative;
+    }
+    >li{
+      width: 100px;
+      >span{
+        padding: 7px;
+        cursor: pointer;
+        background-color: rgb(85, 97, 130);
+        border-radius: 30% 30% 0 0;
+        &:hover{
+          color: white
+        }
+      }
+      >ul{
+        >ul{
+          position: absolute;
+          top: 30px;
+          left: 0;
+          width: 100px;
+         .need_absolute{
+           position: absolute;
+           left: 100px;
+           top: 0;
+           display: none;
+         }
+        }
+      }
+    }
+    .list_span{
+      display: inline-block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 100px;
+      border-radius: 10px;
       &:hover{
-        color: white
+        background-color: rgb(226, 231, 227);
+        font-weight: bold;
+        cursor: pointer;
       }
     }
   }
