@@ -8,5 +8,9 @@
     padding-right: 30px;
     font-size: 18px;
     font-weight: bold;
+    &:hover{
+      color: rgb(154, 35, 35);
+      text-decoration: underline;
+    }
   }
 }

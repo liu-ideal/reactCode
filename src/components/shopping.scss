@@ -1,0 +1,68 @@
+.wrap_shopping{
+  width: 800px;
+  margin: auto;
+  position: relative;
+  top: 60px;
+  .ul_flex{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      width: 190px;
+      margin-right: 10px;
+      margin-top: 10px;
+      h4{
+        font-weight: normal;
+        width: 100%;
+        font-size: 14px;
+        color: rgb(103, 103, 103);
+        height: 18px;
+        padding-top: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        &:hover{
+          color: rgb(6, 6, 6)
+        }
+      }
+      p{
+        color: rgb(177, 12, 27);
+        font-size: 18px;
+        font-weight: bold;
+        &:hover{
+          color: red;
+          cursor: pointer;
+        }
+      }
+      img{
+        width: 100%;
+      }
+      span{
+        border: 1px solid rgb(75, 73, 68);
+        display: inline-block;
+        padding:5px 15px;
+        cursor: pointer;
+        color: rgb(35, 36, 37);
+        &:hover{
+          font-weight: bold;
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+  button{
+    background-color: white;
+    border: 1px solid rgb(147, 149, 150);
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+    margin-bottom: 30px;
+    &:hover{
+      background-color: rgb(222, 227, 223)
+    }
+  }
+}

@@ -1,0 +1,193 @@
+.wrap_statement{
+  width: 800px;
+  margin: auto;
+  position: relative;
+  top: 60px;
+  p{
+    font-size: 14px;
+    color: #7d7878;
+  }
+  h3{
+    text-align: left;
+    text-indent: 20px;
+    color:red;
+  }
+  .item_title{
+    background-color: #e9e9e9;
+    height: 40px;
+    .item_title_left{
+      float: left;
+      height: 100%;
+      label,p{
+        float: left;
+        height: 100%;
+        line-height: 40px;
+      }
+      p{
+        margin-left: 70px;
+      }
+    }
+    .item_title_right{
+      float: right;
+      height: 100%;
+      p{
+        float: left;
+        height: 100%;
+        line-height: 40px;
+        margin-right: 70px
+      }
+    }
+    &::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  .goods_list{
+    border-top: 2px solid rgb(71, 59, 52);
+    li{
+      &::after{
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+    .goods_list_left{
+      float: left;
+      input{
+       position: relative;
+       bottom:70px;
+      }
+      img{
+        width: 100px;
+      }
+      p{
+        float: right;
+        width: 300px;
+      }
+    }
+    .goods_list_right{
+      float: right;
+      margin-top: 20px;
+      height: 22px;
+      &::after{
+        content: '';
+        display: block;
+        clear: both;
+      }
+      p{
+        color: black;
+
+      }
+      .change_num{
+        input{
+          width: 30px;
+          height: 20px;
+          border: 1px solid #ccc;
+          float: left;
+          text-align: center;
+        }
+        i{
+          float: left;
+          width: 18px;
+          font-style: normal;
+          border: 1px solid #ccc;
+          height: 20px;
+          line-height: 20px;
+        }
+        i:nth-of-type(1){
+          border-right: none
+        }
+        i:nth-of-type(2){
+          border-left: none
+        }
+      }
+      p,div,span{
+        float: left;
+        margin-right: 60px;
+        height: 100%;
+        line-height: 22px;
+      }
+      .go_delete{
+        font-size: 14px;
+        color: rgb(43, 46, 44);
+        cursor: pointer;
+        &:hover{
+          color: red
+        }
+      }
+    }
+  }
+  .delete_and_total_price{
+    background-color: #e9e9e9;
+    height: 40px;
+    .delete_and_total_price_left{
+      float: left;
+      height: 100%;
+      label,p{
+        float: left;
+        height: 100%;
+        line-height: 40px;
+      }
+      p{
+        margin-left: 50px;
+        cursor: pointer;
+        &:hover{
+          color: red;
+          text-decoration: underline;
+        }
+      }
+    }
+    .delete_and_total_price_right{
+      float: right;
+      height: 100%;
+      margin-right: 60px;
+      .price_item,p{
+        float: left;
+        height: 100%;
+        line-height: 40px;
+        .price{
+          color: red;
+          font-size: 19px;
+          font-weight: bold;
+        }
+        .settle_accounts{
+          border: none;
+          width: 50px;
+          height: 30px;
+          line-height: 30px;
+          margin-left: 60px;
+          background-color: rgb(180, 88, 88);
+          color: white;
+          cursor: pointer;
+          &:hover{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    &::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  .continue_shop{
+    background-color: white;
+    border: 1px solid rgb(147, 149, 150);
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+    margin-bottom: 30px;
+    &:hover{
+      background-color: rgb(222, 227, 223)
+    }
+  }
+  #no_goods{
+    padding: 40px 0
+  }
+}

@@ -9,7 +9,7 @@ var Mock = require("mockjs")
 //         }]
 //     }]
 // })
-export default function createData(num){
+ function createData(num){
   let dataObj={
     'list|4':[{
 
@@ -25,3 +25,4 @@ export default function createData(num){
   }
   Mock.mock('/mylist',dataObj)
 }
+module.exports=createData;
