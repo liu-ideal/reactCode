@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack-dev-server --config config/webpack.dev.js",
-        "build": "webpack --config config/webpack.build.js"
+        "build": "cross-env NODE_ENV=production webpack --config config/webpack.build.js"
     },
     "author": "liupei",
     "license": "ISC",
@@ -26,6 +26,7 @@
         "babel-preset-react": "^6.24.1",
         "babel-preset-stage-0": "^6.24.1",
         "copy-webpack-plugin": "^4.5.1",
+        "cross-env": "^6.0.3",
         "css-loader": "^0.28.11",
         "eslint": "^5.0.1",
         "eslint-config-standard": "^11.0.0",
@@ -43,7 +44,7 @@
         "less-loader": "^4.1.0",
         "mockjs": "^1.0.1-beta3",
         "node-sass": "^4.9.0",
-        "optimize-css-assets-webpack-plugin": "^4.0.0",
+        "optimize-css-assets-webpack-plugin": "^3.2.0",
         "postcss-loader": "^2.1.5",
         "prop-types": "^15.6.1",
         "react": "^16.3.2",

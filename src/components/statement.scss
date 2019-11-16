@@ -94,6 +94,7 @@
           border: 1px solid #ccc;
           height: 20px;
           line-height: 20px;
+          cursor: pointer;
         }
         i:nth-of-type(1){
           border-right: none
@@ -148,7 +149,7 @@
         line-height: 40px;
         .price{
           color: red;
-          font-size: 19px;
+          font-size: 15px;
           font-weight: bold;
         }
         .settle_accounts{

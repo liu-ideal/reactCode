@@ -25,7 +25,8 @@ class Shopping extends Component {
               title:x.title,
               imgSrc:x.imgSrc,
               price:x.price,
-              num:1
+              num:1,
+              select:false
           })}>购买</span>
           </li>
         )
@@ -36,7 +37,8 @@ class Shopping extends Component {
     )
   }
   toBuy(data){
-    Store.dispatch({type:'BUY',data:data})
+    Store.dispatch({type:'BUY',data:data});
+    alert("已添加至购物车")
   }
 }
 export default withRouter(Shopping)
