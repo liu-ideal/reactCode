@@ -6,7 +6,7 @@ const config = require("./config")
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const deviceHtml = require("./device")
-deviceHtml()
+// deviceHtml()
 
 const eslintTest=[
     {

@@ -7,6 +7,8 @@ const merge = require('webpack-merge')
 const baseWebpack=require("./webpack.base.js")
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+process.env.BABEL_ENV = 'production';
+console.log("--------"+process.env.NODE_ENV+"-----------")
 module.exports =merge(baseWebpack, {
   devtool:false,
   plugins:[

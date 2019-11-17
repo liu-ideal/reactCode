@@ -7,7 +7,7 @@ module.exports = {
         outputPath: path.join(__dirname, "../dist"),
         outputFileName: "[id]-[name]-[hash].js",
         templatePath: `./src/index.html`,
-        publicPath: "./",
+        // publicPath: "http://localhost:9000/",
         htmlMinify: {
             removeComments: true, //去除注释
             collapseWhitespace: true, //去除空格
