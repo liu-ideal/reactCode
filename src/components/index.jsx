@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
-{/*import style from '../css/index';*/}
 import "./freeList.scss"
 import Cover from './cover'
 import createData from "../../mock/data.js"

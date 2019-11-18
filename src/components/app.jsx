@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Router from '../router';
-import "../css/app.scss"
+import "./app.scss"
 class App extends Component{
     constructor(props){
         super(props);
