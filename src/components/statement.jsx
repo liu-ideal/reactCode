@@ -56,7 +56,7 @@ class Statement extends Component {
     </div>
 
      </div>
-    <button className="continue_shop" onClick={()=>{this.props.history.push('/gouwu')}}>暂不结算,继续购物</button>
+    <button className="continue_shop" onClick={()=>{this.props.history.push('/')}}>暂不结算,继续购物</button>
       </div>
     )
   }
