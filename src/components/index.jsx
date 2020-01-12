@@ -35,6 +35,12 @@ class Index extends Component {
             </div>
         )
     }
+    componentDidMount(){
+      let isMobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
+      if(isMobile){
+        alert("该项目暂不支持移动端测试")
+      }
+    }
     coverShouldShow(obj){
       this.setState({
         coverShow:obj.show

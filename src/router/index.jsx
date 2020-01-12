@@ -14,10 +14,10 @@ function RouterConfig(){
     return (
        <Router>
               <div className="wrap">
-             <Link to="/" className="freeList">任意级菜单</Link>
-             <Link to="/gouwu" className="shoppingCar">购物车</Link>
-            <Route path="/gouwu" component={Shopping}/>
-            <Route exact path='/' component={Index}/>
+             <Link to="/gouwu" className="freeList">任意级菜单</Link>
+             <Link to="/" className="shoppingCar">购物车</Link>
+            <Route path="/gouwu" component={Index}/>
+            <Route exact path='/' component={Shopping}/>
             <Route exact path='/shoppingcar' component={ShoppingCar}/>
             </div>
     </Router>
